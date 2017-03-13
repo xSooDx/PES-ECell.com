@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PES ECell</title>
+    <link rel="icon" href="img/logos/icon.png"/>
+    
+    <link rel="stylesheet" type="text/css" href="css/jquery.multiscroll.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="css/lib/jquery.multiscroll.min.css">
+    <link rel="stylesheet" href="css/index.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+    <script src="js/lib/jquery.multiscroll.min.js"></script>
+		<script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="js/index.js"></script>
+
+</head>
+<body>
+
+    <header>
+        <nav>
+            <img id="menu" src="img/menu.svg" alt="" onclick="toggleNav()"> 
+        </nav>
+        <div id="nav-overlay">
+            <div class="overlay-content">
+                <table>
+                    <tr>
+                        <td class="td-icon"></td>
+                        <td class="td-label"><a class="nav-to-stage" href="#inspire">INSPIRE</a></td>
+                    </tr>
+                    <tr>
+                        <td class="td-icon"></td>
+                        <td class="td-label"><a class="nav-to-stage" href="#educate">EDUCATE</a></td>
+                    </tr>
+                    <tr>
+                        <td class="td-icon"></td>
+                        <td class="td-label"><a class="nav-to-stage" href="#endeavour">ENDEAVOUR</a></td>
+                    </tr>
+                    <tr>
+                        <td class="td-icon"></td>
+                        <td class="td-label"><a class="nav-to-stage" href="#contact">CONTACT</a></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="copyright">
+                &copy; 2017 PES University
+            </div>
+        </div>
+    </header>
+
+       
+
+    <main id="multiscroll" class="">
+        <div class="stage fullheight ms-left">
+            <div id="info-ecell" class="ms-section half fullheight stage-solid-bg rgrad-blue">
+                <img src="img/logos/ecell_white_web.png" alt="" class="stage-logo ">
+                <div class="content">We, at PES E-Cell believe that inspiration is the root of all great success stories. Be it thought provoking talks or brainstorming discussions with the who’s who of the industry, we try our very best to make it happen.</div>
+            </div>
+            <div id="stage-inspire" class="ms-section stage-img half fullheight">
+            </div>
+            <div id="info-educate" class=" ms-section half fullheight stage-solid-bg rgrad-white">
+                <img src="img/logos/educate_black_web.png" alt="" class="stage-logo">
+                <div class="content">In reaching our goal of successfully helping student startups, it was clear to us that it is also our duty to ensure that members require the confidence of knowing valuable skills to begin their journey of building an impactful product/service.</div>
+                <a href="educate.html">Know More</a>
+            </div>
+            <div id="stage-endeavour" class="ms-section stage-img half fullheight"></div>
+						
+            <div id="stage-contact" class="ms-section half fullheight stage-solid-bg rgrad-blue">
+                <div class="slide-item">
+                
+                <form class="contact-form">
+                    <h3>We would love to hear from you!</h3>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Name" name="name" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Email" name="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Subject" name="subject" id="subject" required>
+                    </div>
+                    <div class="form-group">
+                            <textarea placeholder="Message" class="form-control" rows="5" name="message" id="message" required></textarea>
+                    </div>
+                    <div class="form-group">
+                            <div class="g-recaptcha" data-sitekey="6LdYaRQUAAAAAFZw27wi3T6sL7WIUVhC5lom7o2O"></div>
+                    </div>
+                    <div class="form-group">
+                            <input type="submit" class="btn btn-default" value="Send"/>
+                    </div>		
+                </form>
+                </div>
+            </div>
+        </div>
+        <div class="stage ms-right">
+            <div id="stage-ecell" class="ms-section stage-img half fullheight">
+            </div>
+            <div id="info-inspire" class=" ms-section half fullheight stage-solid-bg rgrad-white">
+                <img src="img/logos/inspire_black_web.png" alt="" class="stage-logo">
+                <div class="content">“In our mission of instilling the spirit of entrepreneurship, we are constantly trying to expose the students of PES University to successful entrepreneurs and thought leaders in order to showcase the power of taking initiative and its lasting impact on solving problems that plague the world around us. With this, we hope to inspire them to take charge and be change makers.”
+                </div>
+                <a href="inspire.html">Know More</a>
+            </div>
+            <div id="stage-educate" class="ms-section stage-img half fullheight"></div>
+            <div id="info-endeavour" class=" ms-section half fullheight stage-solid-bg rgrad-white">
+                <img src="img/logos/endeavour_black_web.png" alt="" class="stage-logo">
+                <div class="content">Taking us in the direction of our journey of helping driven students solve real world problems by creating a competitive environment which closely simulates real world business dynamics.
+                </div>
+                <a href="endeavour.html">Know More</a>
+            </div>
+            <div class="ms-section half fullheight">
+                <iframe width="100%" height="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ0zaNjUY-rjsRzwpkrPZ0TWk&key=AIzaSyA3IWj-hs8DDIBFEe4P2CdGKu93VZDd1xo" allowfullscreen></iframe>
+            </div>
+						
+        </div>
+    </main>
+    
+    
+</body>
+</html>

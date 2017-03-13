@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css?family=Cairo|Exo+2');
+body {
+    font-size: 16px;
+    background-color: #000;
+}
+
+a{
+    text-decoration: none;
+    outline: none;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Exo 2', sans-serif;
+}
+/**  Carousel Fade **/
+
+.carousel.fade {
+    opacity: 1;
+}
+
+.carousel.fade .item {
+    transition: opacity ease-out .7s;
+    /*left: 0;*/
+    opacity: 0;
+    /*top: 0;*/
+    /*position: absolute;*/
+    width: 100%;
+    display: block;
+}
+
+.carousel.fade .item:first-child {
+    top: auto;
+    opacity: 0;
+    position: relative;
+}
+
+.carousel.fade .item.active {
+    opacity: 1;
+}
+
+.carousel-control {
+    opacity: 0;
+}
+
+.carousel-control.right,
+.carousel-control.left {
+    background-image: none;
+}
+
+#featured .item {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.fullheight {
+    height: 100vh;
+}
+
+
+/* Nav */
+
+#menu {
+    position: fixed;
+    z-index: 1000;
+    height: 1.44em;
+    left: 0;
+    padding: 1.32em;
+    /*margin: .32em 0 0 .32em;*/
+    cursor: pointer;
+    background-color: transparent;
+    transition: background-color .3s;
+}
+
+#menu:hover {
+    background-color: #1b0f51;
+}
+
+#menu:active {
+    background-color: rgba(13, 7, 38, 1);
+}
+
+#nav-overlay {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    background-color: rgba(13, 7, 38, 0.95);
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+#nav-overlay table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
+}
+
+td {
+    margin: 0;
+    padding: 0;
+    padding-left: .2em;
+}
+
+table tr td a {
+    color: #FFF;
+}
+
+
+/* Position the content inside the overlay */
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    /* 25% from the top */
+    width: 100%;
+    /* 100% width */
+    /*    text-align: center;*/
+    /* Centered text/links */
+    margin: 0 auto;
+    /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+#copyright {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1em 0;
+    color: #e0e0e0;
+    background-color: #050310;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8em;
+
+}
+
+/* Stage */
+
+#stage {
+    height: 100vh;
+    position: relative;
+}
+
+.half {
+    width: 50%;
+    float: left;
+}
+
+.stage-img {
+    background-size: cover;
+    background-position: center center;
+}
+
+#stage-inspire {
+    background-image: url(../img/backgrounds/inspire.jpg);
+}
+
+#stage-educate {
+    background-image: url(../img/backgrounds/educate.jpg);
+}
+
+#stage-endeavour {
+    background-image: url(../img/backgrounds/endeavour.jpg);
+}
+#stage-ecell {
+    background-image: url(../img/backgrounds/ecell.jpg);
+}
+.rgrad-blue{
+    background: #003366; /* For browsers that do not support gradients */
+    background: -webkit-radial-gradient(#003366,#001f3f); /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(#003366,#001f3f); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(#003366,#001f3f); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(#003366,#001f3f); /* Standard syntax */
+}
+
+.rgrad-white{
+    background: white; /* For browsers that do not support gradients */
+    background: -webkit-radial-gradient(#ffffff,#d0d0d0); /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(#ffffff,#d0d0d0); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(#ffffff,#d0d0d0); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(#ffffff,#d0d0d0); /* Standard syntax */
+}
+.rgrad-white .content{
+    color: #000;
+}
+
+
+.stage-solid-bg {
+    
+}
+.ms-section a
+{
+    font-size:24px;
+}
+#text {
+    font-size: 1.2em;
+    font-weight: 100;
+}
+
+.stage {
+    text-align: center;
+}
+
+.stage-logo {
+    min-width: 50%;
+    max-height: 200px;
+    height: auto;
+    margin: 1.6em;
+}
+.stage-logo-small {
+    width: 25%;
+    height: auto;
+    margin: 1.6em;
+}
+
+.content {
+    padding: 1.6em 2.4em;
+    font-size: 1.2em;
+    line-height: 1.6em;
+    color: #FFF;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 100;
+}
+
+.contact-form{
+    color:white;
+}
+.slide-item{
+    margin: 20px;    
+}

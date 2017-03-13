@@ -1,0 +1,76 @@
+body {
+    font-size: 16px;
+}
+
+/**  Carousel Fade **/
+
+.carousel.fade {
+    opacity: 1;
+}
+
+.carousel.fade .item {
+    transition: opacity ease-out .7s;
+    left: 0;
+    opacity: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    display: block;
+}
+
+.carousel.fade .item:first-child {
+    top: auto;
+    opacity: 0;
+    position: relative;
+}
+
+.carousel.fade .item.active {
+    opacity: 1;
+}
+
+.carousel-control {
+    opacity: 0;
+}
+
+.carousel-control.right,
+.carousel-control.left {
+    background-image: none;
+}
+
+#featured .item {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+}
+
+
+/* Stage */
+
+#stage {
+    height: 100vh;
+    position: relative;
+}
+
+#stage-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#stage-content {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(black, transparent);
+    color: white;
+    text-align: center;
+
+}
+
+#text {
+    font-size: 1.2em;
+    font-weight: 100;
+}
